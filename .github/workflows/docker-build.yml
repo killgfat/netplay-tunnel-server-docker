@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: netplay-tunnel-server
 
 jobs:
-  publish:
+  build:
     name: Docker build
     runs-on: ubuntu-latest
     steps:
