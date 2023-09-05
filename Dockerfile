@@ -5,4 +5,5 @@ RUN apk update && apk add git && \
     git clone https://github.com/libretro/netplay-tunnel-server.git && \
     mv /app/netplay-tunnel-server/* /app
     
-ENTRYPOINT ["python3 -OO retroarch_tunnel_server.py retroarch_tunnel_server.ini"]
+ENTRYPOINT ["/usr/local/binpython3","-OO"]
+CMD ["/app/retroarch_tunnel_server.py"]
